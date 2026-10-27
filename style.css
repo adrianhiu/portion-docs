@@ -55,3 +55,16 @@ h2 { font-size: 13px; font-weight: 400; text-transform: uppercase; letter-spacin
 .footnote { color: var(--secondary); font-size: 13px; margin: 8px 16px 0; }
 footer { text-align: center; color: var(--secondary); font-size: 13px; margin-top: 48px; }
 footer a { color: var(--secondary); }
+
+/* Laptop and desktop: wider column, larger type, buttons sized to their label. */
+@media (min-width: 768px) {
+  body { font-size: 17px; }
+  main { max-width: 760px; padding: 96px 32px; }
+  .hero { margin-bottom: 48px; }
+  .hero img { width: 112px; height: 112px; border-radius: 25px; }
+  h1 { font-size: 48px; }
+  .lede { font-size: 20px; }
+  .card { padding: 8px 24px; }
+  .button { width: fit-content; margin: 24px auto 8px; padding: 12px 32px; }
+  .footnote { text-align: center; }
+}
