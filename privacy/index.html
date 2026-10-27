@@ -4,48 +4,81 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portion Privacy Policy</title>
-  <style>
-    :root { color-scheme: light dark; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    body { max-width: 720px; margin: 0 auto; padding: 48px 24px; line-height: 1.6; }
-    h1, h2 { color: #74547d; }
-    h2 { margin-top: 2rem; }
-    a { color: #74547d; }
-  </style>
+  <link rel="icon" href="../icon.png">
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
   <main>
-    <h1>Portion Privacy Policy</h1>
-    <p><strong>Effective date:</strong> 21 October 2026</p>
-    <p>Portion helps you split receipts without a Portion account. It does not use advertising, analytics, or tracking.</p>
+    <a class="back" href="../">‹ Portion</a>
+    <header class="hero">
+      <h1>Privacy Policy</h1>
+      <p class="lede">Portion splits receipts without an account, advertising, analytics, or tracking.</p>
+      <p class="meta">Effective 27 October 2026</p>
+    </header>
+
+    <h2>At a glance</h2>
+    <div class="card">
+      <ul>
+        <li>Your receipts, people, and splits are saved on your iPhone.</li>
+        <li>AI Reading sends only the receipt image, with photo metadata removed.</li>
+        <li>The backend doesn’t store receipt images.</li>
+        <li>Text Scanning and Translate run on your iPhone.</li>
+      </ul>
+    </div>
 
     <h2>Receipt reading</h2>
-    <p>AI Reading uses Apple Private Cloud Compute or OpenAI to read receipt images. When using OpenAI, images pass through Portion’s Cloudflare backend with the original photo metadata removed. No account, device, contacts, or split-participant information is attached to the OpenAI request. Anything printed on the receipt remains visible.</p>
-    <p>The backend does not save receipt images or log their contents. It temporarily keeps reading results to recover interrupted requests. Apple, Cloudflare, and OpenAI process information under their own privacy policies; OpenAI may retain API data for abuse monitoring.</p>
-    <p>Turn off AI Reading in Settings to use Text Scanning entirely on your iPhone. Reading results may contain mistakes and remain editable.</p>
+    <div class="card">
+      <p>AI Reading uses Apple Private Cloud Compute or OpenAI to read receipt images. When using OpenAI, images pass through Portion’s Cloudflare backend with the original photo metadata removed. No account, device, contacts, or split-participant information is attached to the OpenAI request. Anything printed on the receipt remains visible.</p>
+      <p>The backend does not save receipt images or log their contents. It keeps a reading result for up to 15 minutes so an interrupted request can be recovered, and remembers a scan ID for 24 hours to prevent duplicate requests. Apple, Cloudflare, and OpenAI process information under their own privacy policies; OpenAI may retain API data for abuse monitoring.</p>
+      <p>Turn off AI Reading in Settings to use Text Scanning entirely on your iPhone. Reading results may contain mistakes and remain editable.</p>
+    </div>
+
+    <h2>Translation</h2>
+    <div class="card">
+      <p>Translate uses Apple’s Translation framework on your iPhone. Item names are not sent to the developer.</p>
+    </div>
 
     <h2>Saved data</h2>
-    <p>Receipt images, items, names, assignments, and split results are saved on your device. Supported iCloud features store certain information in your private iCloud account, which the developer cannot access.</p>
+    <div class="card">
+      <p>Receipt images, items, names, assignments, and split results are saved on your device. Saved receipts may appear in Spotlight search on your iPhone. Supported iCloud features store certain information in your private iCloud account, which the developer cannot access.</p>
+    </div>
 
     <h2>Security</h2>
-    <p>Apple App Attest verifies app installations. The backend keeps installation verification records and usage counters, and uses network information to limit abuse. These records are not sent to OpenAI or used for tracking.</p>
+    <div class="card">
+      <p>Apple App Attest verifies app installations. The backend keeps installation verification records and usage counters, and uses network information to limit abuse. These records are not sent to OpenAI or used for tracking.</p>
+    </div>
 
     <h2>Contacts</h2>
-    <p>If you choose to select someone from Contacts, Portion receives only the information you explicitly select. Portion does not upload your address book to the developer.</p>
+    <div class="card">
+      <p>If you choose to select someone from Contacts, Portion receives only the information you explicitly select. Portion does not upload your address book to the developer.</p>
+    </div>
 
     <h2>Exchange rates</h2>
-    <p>Portion may request current or historical exchange rates from the Frankfurter public API. These requests contain currency codes and an optional date. They do not include receipt images, names, split details, or other personal information.</p>
+    <div class="card">
+      <p>Portion may request current or historical exchange rates from the Frankfurter public API. These requests contain currency codes and an optional date. They do not include receipt images, names, split details, or other personal information.</p>
+    </div>
 
     <h2>Purchases</h2>
-    <p>Optional support tips are processed by Apple through the App Store. The developer does not receive or store your payment-card details.</p>
+    <div class="card">
+      <p>Optional support tips are processed by Apple through the App Store. The developer does not receive or store your payment-card details.</p>
+    </div>
 
     <h2>Support email</h2>
-    <p>If you contact Portion Support, the information you choose to include—such as your email address, message, diagnostic report, or attachments—will be received and used only to respond to your request and troubleshoot the reported issue. Nothing is sent until you review the email and choose to send it.</p>
+    <div class="card">
+      <p>If you contact Portion Support, the information you choose to include—such as your email address, message, diagnostic report, or attachments—will be received and used only to respond to your request and troubleshoot the reported issue. Nothing is sent until you review the email and choose to send it.</p>
+    </div>
 
     <h2>Data retention and deletion</h2>
-    <p>Local app data remains on your device until you delete it or remove the app. Data stored in your private iCloud account is managed through your Apple account and device settings. Support correspondence may be retained only as long as reasonably necessary to resolve your request.</p>
+    <div class="card">
+      <p>Local app data remains on your device until you clear it in Settings or remove the app. Data stored in your private iCloud account is managed through your Apple account and device settings. Support correspondence may be retained only as long as reasonably necessary to resolve your request.</p>
+    </div>
 
     <h2>Contact</h2>
-    <p>Questions about this policy can be sent to <a href="mailto:portionapp.support@gmail.com">portionapp.support@gmail.com</a>.</p>
+    <div class="card">
+      <p>Questions about this policy can be sent to <a href="mailto:portionapp.support@gmail.com">portionapp.support@gmail.com</a>.</p>
+    </div>
+
+    <footer><a href="../support/">Support</a></footer>
   </main>
 </body>
 </html>
