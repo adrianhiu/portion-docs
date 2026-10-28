@@ -18,13 +18,14 @@
     <section class="hero">
       <h1>Privacy Policy</h1>
       <p class="lede">Portion splits receipts without an account, advertising, analytics, or tracking.</p>
-      <p class="meta">Effective 27 October 2026</p>
+      <p class="meta">Effective 28 October 2026</p>
     </section>
 
     <h2>At a glance</h2>
     <div class="card">
       <ul>
         <li>Your receipts, people, and splits are saved on your iPhone.</li>
+        <li>Portion asks before sending a receipt image to OpenAI for the first time.</li>
         <li>AI Reading sends only the receipt image, with photo metadata removed.</li>
         <li>The backend doesn’t store receipt images.</li>
         <li>Text Scanning and Translate run on your iPhone.</li>
@@ -33,9 +34,9 @@
 
     <h2>Receipt reading</h2>
     <div class="card">
-      <p>AI Reading uses Apple Private Cloud Compute or OpenAI to read receipt images. When using OpenAI, images pass through Portion’s Cloudflare backend with the original photo metadata removed. No account, device, contacts, or split-participant information is attached to the OpenAI request. Anything printed on the receipt remains visible.</p>
+      <p>AI Reading uses Apple Private Cloud Compute or OpenAI to read receipt images. Portion asks before the first time a receipt image is sent to OpenAI. If you choose Text Scanning instead, that receipt is read on your iPhone and Portion asks again next time. When using OpenAI, images pass through Portion’s Cloudflare backend with the original photo metadata removed. No account, device, contacts, or split-participant information is attached to the OpenAI request. Anything printed on the receipt remains visible.</p>
       <p>The backend does not save receipt images or log their contents. It keeps a reading result for up to 15 minutes so an interrupted request can be recovered, and remembers a scan ID for 24 hours to prevent duplicate requests. Apple, Cloudflare, and OpenAI process information under their own privacy policies; OpenAI may retain API data for abuse monitoring.</p>
-      <p>Turn off AI Reading in Settings to use Text Scanning entirely on your iPhone. Reading results may contain mistakes and remain editable.</p>
+      <p>Turn off AI Reading in Settings to use Text Scanning entirely on your iPhone. Turning it off also withdraws permission to use OpenAI, so Portion asks again if you turn it back on. Reading results may contain mistakes and remain editable.</p>
     </div>
 
     <h2>Translation</h2>
